@@ -5,7 +5,7 @@ import karroum.houssam.exam_backend.services.RemboursementService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/remboursements")
 public class RemboursementRestController {
