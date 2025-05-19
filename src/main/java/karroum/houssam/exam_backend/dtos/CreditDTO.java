@@ -10,9 +10,9 @@ import java.util.List;
 @Data
 public class CreditDTO {
     private Long id;
-    private LocalDate dateDemande;
+    private Date dateDemande;
     private StatutCredit statut;
-    private LocalDate dateAcceptation;
+    private Date dateAcceptation;
     private Double montant;
     private int dureeRemboursement;
     private Double tauxInteret;
