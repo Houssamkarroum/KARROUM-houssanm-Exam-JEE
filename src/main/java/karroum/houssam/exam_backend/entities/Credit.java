@@ -25,6 +25,6 @@ public abstract class Credit {
     @ManyToOne
     private Client client;
 
-    @OneToMany(mappedBy = "credit")
+    @OneToMany(mappedBy = "credit", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Remboursement> remboursements;
 }
